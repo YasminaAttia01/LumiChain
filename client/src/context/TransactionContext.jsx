@@ -99,7 +99,7 @@ export const TransactionsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
 
-      throw new Error("No ethereum object.");
+      throw new Error("No ethereum object");
     }
   };
 
@@ -115,7 +115,7 @@ export const TransactionsProvider = ({ children }) => {
           params: [{
             from: currentAccount,
             to: addressTo,
-            gas: "0x5208",//21000 GWEI
+            gas: "0x5208",
             value: parsedAmount._hex,
           }],
         });
